@@ -1,11 +1,28 @@
 -# %h2  Projects
 #projects
-%i.large.material-icons laptop_mac
+%i.large.material-icons.center laptop_mac
 .projects
   - data.projects.each do |project|
     %h4= project[:name]
     %h5= project[:used]
     %p= project[:description]
+
+#languages
+%i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
+%h2 Languages & tools
+%i.devicon-ruby-plain
+  %i.devicon-javascript-plain
+  %i.devicon-css3-plain
+  %i.devicon-html5-plain
+%i.devicon-jquery-plain
+  %i.devicon-foundation-plain
+  %i.devicon-cucumber-plain
+  %i.devicon-jasmine-plain
+%i.devicon-github-plain
+  %i.devicon-heroku-plain
+  %i.devicon-postgresql-plain
+  %i.devicon-photoshop-plain
+  -# %i.devicon-slack-plain
 
 #work
 -# %h2 Workplaces
