@@ -2,18 +2,25 @@ body {
   background-color: #ff6600;
   color: #ffffcc;
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+  main {
+    flex: 1 0 auto;
+  }
 
 i {
   padding-top: 40px;
 }
 
 a {
-  color: rgba(#000, 0.7);
+  color: #ffffcc;
 
   &:focus,
   &:hover {
-    color: rgba(#000, 0.6);
+    color: #490A00;
   }
 }
 
@@ -31,11 +38,11 @@ h4 {
 }
 
 .nav-wrapper {
-  background-color: #FF4600;
+  background-color: #D43206;
 }
 
 nav ul li:hover {
-   background-color: #FF2300;
+   background-color: #C52B01;
 }
 
 .white-text li a{
@@ -75,4 +82,10 @@ nav ul li:hover {
 i {
   font-size: 50px;
   letter-spacing: 30px;
+}
+
+footer.page-footer {
+  background-color: #811503;
+  color: #ffffcc;
+  padding: 0px;
 }

@@ -1,14 +1,23 @@
-%h1 Amanda Alling Andrén
-
 -# %h2  Projects
+#projects
 %i.large.material-icons laptop_mac
-
 .projects
   - data.projects.each do |project|
     %h4= project[:name]
     %h5= project[:used]
     %p= project[:description]
 
+#work
+-# %h2 Workplaces
+%i.large.material-icons work
+.work#work
+  - data.work.each do |work|
+    %h4= work[:work]
+    %h5= work[:time]
+    %p= work[:skills]
+    %p= work[:description]
+
+#education
 -# %h2 Education
 %i.large.material-icons school
 .education
@@ -19,12 +28,3 @@
     %p= education[:description]
     %p= education[:second]
     %p= education[:third]
-
--# %h2 Workplaces
-%i.large.material-icons work
-.work
-  - data.work.each do |work|
-    %h4= work[:work]
-    %h5= work[:time]
-    %p= work[:skills]
-    %p= work[:description]
