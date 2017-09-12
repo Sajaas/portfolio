@@ -1,12 +1,11 @@
 body {
   background-color: #ff6600;
   color: #ffffcc;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
   text-align: center;
+}
+
+i {
+  padding-top: 40px;
 }
 
 a {
@@ -23,18 +22,19 @@ h1 {
 }
 
 h2 {
-  color: #FFFA4D;
+  color: #ffffcc;
   padding-top: 20px;
 }
 
 h4 {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
-// Only necessary for window height sized blocks.
- html, body, .block {
-   height: 100%;
- }
+//Materialize pushpin stuff:
+// // Only necessary for window height sized blocks.
+//  html, body, .block {
+//    height: 100%;
+//  }
 
  // Class for when element is above threshold
 .pin-top {

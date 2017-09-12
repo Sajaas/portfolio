@@ -1,21 +1,27 @@
-%h1 Hello! This is my portfolio.
+%h1 Amanda Alling Andrén
 
-%h2 Projects
+-# %h2  Projects
+%i.large.material-icons laptop_mac
+
 .projects
   - data.projects.each do |project|
     %h4= project[:name]
     %h5= project[:used]
     %p= project[:description]
 
-%h2 Education
+-# %h2 Education
+%i.large.material-icons school
 .education
   - data.education.each do |education|
     %h4= education[:school]
     %h5= education[:course]
     %p= education[:time]
     %p= education[:description]
+    %p= education[:second]
+    %p= education[:third]
 
-%h2 Workplaces
+-# %h2 Workplaces
+%i.large.material-icons work
 .work
   - data.work.each do |work|
     %h4= work[:work]

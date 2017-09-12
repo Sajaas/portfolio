@@ -31,9 +31,9 @@
   description: My first group project! We deployed a site which allows a customer to log in and order food.
 
 - name: Portfolio
-  used: Ruby, CSS, Haml, Rspec, middlemanapp
+  used: Ruby, CSS, Haml, Rspec, middleman
   description: This portfolio! Woho!
 
 - name: Just for fun!
   used: other projects that I love to work with
-  description: Saybooks.blogspot.com
+  description: Book blog (saybooks.blogspot.com)
