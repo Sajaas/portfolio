@@ -29,7 +29,7 @@
   .container
     #projects
     %a{:href => "https://github.com/sajaas", :target => "_blank"}
-      %i.fa.fa-github.fa-5x{"aria-hidden" => "true"}
+      %i.github.fa.fa-github.fa-5x{"aria-hidden" => "true"}
     - data.projects.each do |project|
       %h3= project[:name]
       %h5= project[:used]

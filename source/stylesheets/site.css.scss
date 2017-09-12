@@ -25,7 +25,7 @@ body {
     flex: 1 0 auto;
   }
 
-i.main {
+i.menu {
   padding: 0px;
   color: white;
 }
@@ -36,11 +36,15 @@ i.top {
   color: white;
 }
 
+i.github {
+  font-size: 100px;
+}
+
 i {
   padding-top: 60px;
 }
 
-a.main {
+a.menu {
   color: white;
 }
 
