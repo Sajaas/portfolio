@@ -1,6 +1,6 @@
 body {
-  background-color: #ff6600;
-  color: #ffffcc;
+  background-color: white;
+  color: white;
   text-align: center;
   display: flex;
   min-height: 100vh;
@@ -13,7 +13,7 @@ body {
 
 i.main {
   padding: 0px;
-  color: #ffffcc;
+  color: white;
 }
 
 i {
@@ -21,15 +21,15 @@ i {
 }
 
 a.main {
-  color: #FFDC86;
+  color: white;
 }
 
 a {
-  color: #FFDC86;
+  color: white;
 
   &:focus,
   &:hover {
-    color: #FFF7D8;
+    color: #2E86C1;
   }
 }
 
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  color: #ffffcc;
+  color: white;
   padding-top: 20px;
 }
 
@@ -47,24 +47,22 @@ h4 {
 }
 
 .nav-wrapper {
-  background-color: #D43206;
+  background-color: #0C223A;
   font-size: 40px;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
-  color: #ffffcc;
+  color: white;
 }
 
 nav ul li:hover {
-   background-color: #C52B01;
+   background-color: #2E86C1;
 }
 
 .white-text li a{
-  color: #ffffcc;
+  color: white;
  }
-
-
 
 //Materialize pushpin stuff:
 // // Only necessary for window height sized blocks.
@@ -102,13 +100,38 @@ i {
 }
 
 footer.page-footer {
-  background-color: #811503;
-  color: #ffffcc;
+  background-color: #101F30;
+  color: white;
   padding: 0px;
 }
 
-.languages, .welcome, .work, .education, .projects, .about, .hobbies {
+.languages, .welcome, .work, .education, .projects, .about {
   padding-bottom: 50px;
+  min-height: 600px;
+}
+
+.welcome {
+  background-color: #0C7489;
+}
+
+.projects {
+  background-color: #085463;
+}
+
+.languages {
+  background-color: #145F72;
+}
+
+.work  {
+  background-color: #08415C;
+}
+
+.education {
+  background-color: #033F63;
+}
+
+.about {
+  background-color: #112E4F;
 }
 
 #languages {
