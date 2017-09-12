@@ -8,17 +8,18 @@
     %p= project[:description]
 
 #languages
-%i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
-%h2 Languages & tools
-%i.devicon-ruby-plain
+  %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
+
+.languages
+  %i.devicon-ruby-plain
   %i.devicon-javascript-plain
   %i.devicon-css3-plain
   %i.devicon-html5-plain
-%i.devicon-jquery-plain
+  %i.devicon-jquery-plain
   %i.devicon-foundation-plain
   %i.devicon-cucumber-plain
   %i.devicon-jasmine-plain
-%i.devicon-github-plain
+  %i.devicon-github-plain
   %i.devicon-heroku-plain
   %i.devicon-postgresql-plain
   %i.devicon-photoshop-plain
@@ -27,7 +28,7 @@
 #work
 -# %h2 Workplaces
 %i.large.material-icons work
-.work#work
+.work
   - data.work.each do |work|
     %h4= work[:work]
     %h5= work[:time]
@@ -45,3 +46,31 @@
     %p= education[:description]
     %p= education[:second]
     %p= education[:third]
+
+#about
+.about
+  %h1 Amanda is me! I am her!
+
+  .hobbies
+    %h3 Hobbies
+    %i.fa.fa-gamepad.fa-4x{"aria-hidden" => "true"}
+    %i.fa.fa-camera.fa-4x{"aria-hidden" => "true"}
+    %i.fa.fa-plane.fa-4x{"aria-hidden" => "true"}
+    %i.fa.fa-book.fa-4x{"aria-hidden" => "true"}
+
+  .contact
+    %h3 Contact
+    %a{:href => "https://www.facebook.com/sajaas", :target => "_blank"}
+      %i.devicon-facebook-plain
+    %a{:href => "mailto:amanda@alling.org", :target => "_blank"}
+      %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true"}
+    %a{:href => "https://www.linkedin.com/in/amanda-alling-andr%C3%A9n-033201116/", :target => "_blank"}
+      %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true"}
+    %a{:href => "https://github.com/sajaas", :target => "_blank"}
+      %i.fa.fa-github.fa-4x{"aria-hidden" => "true"}
+
+  %ul
+    %li Swedish
+    %li English
+    %li French
+    %li Japanese
