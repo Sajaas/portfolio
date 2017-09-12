@@ -11,8 +11,17 @@ body {
     flex: 1 0 auto;
   }
 
+i.main {
+  padding: 0px;
+  color: #ffffcc;
+}
+
 i {
   padding-top: 60px;
+}
+
+a.main {
+  color: #FFDC86;
 }
 
 a {
@@ -20,7 +29,7 @@ a {
 
   &:focus,
   &:hover {
-    color: #490A00;
+    color: #FFF7D8;
   }
 }
 
