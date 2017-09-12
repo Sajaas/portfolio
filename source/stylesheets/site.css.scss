@@ -8,6 +8,10 @@ p.body {
   padding: 10px;
 }
 
+ul#lang {
+  font-size: 30px;
+}
+
 body {
   background-color: white;
   color: white;
@@ -23,6 +27,12 @@ body {
 
 i.main {
   padding: 0px;
+  color: white;
+}
+
+i.top {
+  padding-bottom: 20px;
+  padding-top: 0px;
   color: white;
 }
 
@@ -55,6 +65,10 @@ h2 {
 
 h3 {
   padding-top: 40px;
+}
+
+h3.footer {
+  padding: 0px;
 }
 
 h4 {
@@ -118,10 +132,14 @@ i {
   letter-spacing: 30px;
 }
 
+i.footer {
+  padding-top: 0px;
+}
+
 footer.page-footer {
   background-color: #101F30;
   color: white;
-  padding: 0px;
+  padding-top: 0px;
 }
 
 .languages, .welcome, .work, .education, .projects, .about {
@@ -131,6 +149,7 @@ footer.page-footer {
 
 .welcome {
   background-color: #145872;
+  font-size: 50px;
 }
 
 .projects {

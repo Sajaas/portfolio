@@ -1,15 +1,16 @@
 #top
 
 .welcome.box
-  %h1 Welcome to my portfolio!
-  %i.fa.fa-font.fa-5x{"aria-hidden" => "true"}
-  %p.body Hi! I'm Amanda, and I'm a mid twenties proffesional book lover and junior developer.
+  .container
+    %h1 Amanda's portfolio
+    %i.top.fa.fa-font.fa-5x{"aria-hidden" => "true"}
+    %h5 I'm a mid twenties proffesional book lover and junior developer.
 
 .languages
   .container
     #languages
     %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
-    %h5 Swedish & English (+ some school french and japanese)
+    %h3 Swedish & English
     %i.devicon-ruby-plain
     %i.devicon-javascript-plain
     %i.devicon-css3-plain
@@ -27,7 +28,8 @@
 .projects
   .container
     #projects
-    %i.large.material-icons.center laptop_mac
+    %a{:href => "https://github.com/sajaas", :target => "_blank"}
+      %i.fa.fa-github.fa-5x{"aria-hidden" => "true"}
     - data.projects.each do |project|
       %h3= project[:name]
       %h5= project[:used]
@@ -42,6 +44,8 @@
       %h5= work[:time]
       %p= work[:skills]
       %p= work[:description]
+      %p= work[:description2]
+
 
 .education
   .container
@@ -56,15 +60,17 @@
       %p= education[:third]
 
 
-.about
+.about.box
   .container
     #about
+    %i.large.material-icons person
+    %br
     %i.fa.fa-book.fa-4x{"aria-hidden" => "true"}
     %i.fa.fa-puzzle-piece.fa-4x{"aria-hidden" => "true"}
     %i.fa.fa-gamepad.fa-4x{"aria-hidden" => "true"}
     %i.fa.fa-plane.fa-4x{"aria-hidden" => "true"}
     %h4 Book-lover, organiser, gamer, traveller
-    %p.body I've always loved building things, wether it's been wardrobes, stories or websites. Structuring and organising is a weirdly passionate subject for me. This is partly why I'm looking to work with development!
+    %p.body I've always loved building things - wether it's been wardrobes, stories or websites. Structuring and organising is a weirdly passionate subject for me. This is partly why I'm looking to work with development!
     %p.body I love play all kinds of games with friends (board-, role-, computer- and videogames), and I try to read as often as I can. When I get the chance to travel I gladly make plans and prepare what to pack.
 
 #contact

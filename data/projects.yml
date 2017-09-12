@@ -1,7 +1,3 @@
-- name: My First Website
-  used: HTML5
-  description: Super simple HTML5 site I build during the PrepCourse.
-
 - name: FizzBuzz Ruby
   used: Ruby, Rspec
   description: My first test driven ruby project
