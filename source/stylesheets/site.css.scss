@@ -12,11 +12,11 @@ body {
   }
 
 i {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 a {
-  color: #ffffcc;
+  color: #FFDC86;
 
   &:focus,
   &:hover {
@@ -39,6 +39,12 @@ h4 {
 
 .nav-wrapper {
   background-color: #D43206;
+  font-size: 40px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  color: #ffffcc;
 }
 
 nav ul li:hover {
@@ -48,6 +54,8 @@ nav ul li:hover {
 .white-text li a{
   color: #ffffcc;
  }
+
+
 
 //Materialize pushpin stuff:
 // // Only necessary for window height sized blocks.
@@ -90,7 +98,7 @@ footer.page-footer {
   padding: 0px;
 }
 
-.languages, .work, .education, .projects, .about, .hobbies, .contact {
+.languages, .welcome, .work, .education, .projects, .about, .hobbies {
   padding-bottom: 50px;
 }
 

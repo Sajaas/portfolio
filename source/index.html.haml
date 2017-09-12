@@ -1,76 +1,69 @@
--# %h2  Projects
-#projects
-%i.large.material-icons.center laptop_mac
-.projects
-  - data.projects.each do |project|
-    %h4= project[:name]
-    %h5= project[:used]
-    %p= project[:description]
+.container
 
-#languages
-  %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
+  .welcome
+  %h1 Welcome to my portfolio!
+  Hi! I'm Amanda, and I'm a mid twenties proffesional book lover and junior developer.
 
-.languages
-  %i.devicon-ruby-plain
-  %i.devicon-javascript-plain
-  %i.devicon-css3-plain
-  %i.devicon-html5-plain
-  %i.devicon-jquery-plain
-  %i.devicon-foundation-plain
-  %i.devicon-cucumber-plain
-  %i.devicon-jasmine-plain
-  %i.devicon-github-plain
-  %i.devicon-heroku-plain
-  %i.devicon-postgresql-plain
-  %i.devicon-photoshop-plain
-  -# %i.devicon-slack-plain
+  -# %h2  Projects
+  #projects
+  %i.large.material-icons.center laptop_mac
+  .projects
+    - data.projects.each do |project|
+      %h4= project[:name]
+      %h5= project[:used]
+      %p= project[:description]
 
-#work
--# %h2 Workplaces
-%i.large.material-icons work
-.work
-  - data.work.each do |work|
-    %h4= work[:work]
-    %h5= work[:time]
-    %p= work[:skills]
-    %p= work[:description]
+  #languages
+    %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
 
-#education
--# %h2 Education
-%i.large.material-icons school
-.education
-  - data.education.each do |education|
-    %h4= education[:school]
-    %h5= education[:course]
-    %p= education[:time]
-    %p= education[:description]
-    %p= education[:second]
-    %p= education[:third]
+  .languages
+    %h5 Swedish and English (and some school french and japanese)
+    %i.devicon-ruby-plain
+    %i.devicon-javascript-plain
+    %i.devicon-css3-plain
+    %i.devicon-html5-plain
+    %i.devicon-jquery-plain
+    %i.devicon-foundation-plain
+    %i.devicon-cucumber-plain
+    %i.devicon-jasmine-plain
+    %i.devicon-github-plain
+    -# %i.devicon-heroku-plain
+    %i.devicon-postgresql-plain
+    %i.devicon-photoshop-plain
+    -# %i.devicon-slack-plain
 
-#about
-.about
-  %h1 Amanda is me! I am her!
+  #work
+  -# %h2 Workplaces
+  %i.large.material-icons work
+  .work
+    - data.work.each do |work|
+      %h4= work[:work]
+      %h5= work[:time]
+      %p= work[:skills]
+      %p= work[:description]
 
-  .hobbies
-    %h3 Hobbies
-    %i.fa.fa-gamepad.fa-4x{"aria-hidden" => "true"}
-    %i.fa.fa-camera.fa-4x{"aria-hidden" => "true"}
-    %i.fa.fa-plane.fa-4x{"aria-hidden" => "true"}
+  #education
+  -# %h2 Education
+  %i.large.material-icons school
+  .education
+    - data.education.each do |education|
+      %h4= education[:school]
+      %h5= education[:course]
+      %p= education[:time]
+      %p= education[:description]
+      %p= education[:second]
+      %p= education[:third]
+
+  #about
+  %i.large.material-icons.center person
+  .about
     %i.fa.fa-book.fa-4x{"aria-hidden" => "true"}
+    %i.fa.fa-puzzle-piece.fa-4x{"aria-hidden" => "true"}
+    %i.fa.fa-gamepad.fa-4x{"aria-hidden" => "true"}
+    %i.fa.fa-plane.fa-4x{"aria-hidden" => "true"}
+    %h4 Book-lover, organiser, gamer, traveller
+    %p I've always loved building things, wether or not it's been wardrobes, stories or websites. Structuring and organising is also a weirdly passionate subject for me. This is why I'm looking for a future working with development.
+    %p In my free time I love to spend time playing all kinds of games with friends (board-, role-, computer- and videogames) and reading.
+    %p I wish I could say that travelling the world is part of my free time, but I don't get to do it as much as I want to. Still, traveling stays close to my heard and I always like to dream about (and secretly plan) my next trip.
 
-  .contact
-    %h3 Contact
-    %a{:href => "https://www.facebook.com/sajaas", :target => "_blank"}
-      %i.devicon-facebook-plain
-    %a{:href => "mailto:amanda@alling.org", :target => "_blank"}
-      %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true"}
-    %a{:href => "https://www.linkedin.com/in/amanda-alling-andr%C3%A9n-033201116/", :target => "_blank"}
-      %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true"}
-    %a{:href => "https://github.com/sajaas", :target => "_blank"}
-      %i.fa.fa-github.fa-4x{"aria-hidden" => "true"}
-
-  %ul
-    %li Swedish
-    %li English
-    %li French
-    %li Japanese
+  #contact

@@ -14,3 +14,5 @@
 //     bottom: $target.offset().top + $target.outerHeight() - $this.height()
 //   });
 // });
+
+$(".button-collapse").sideNav();
