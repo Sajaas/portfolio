@@ -1,6 +1,6 @@
 body {
-  background-color: #fbc547;
-  color: #333;
+  background-color: #ff6600;
+  color: #ffffcc;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
@@ -18,7 +18,35 @@ a {
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+h1 {
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: #FFFA4D;
+  padding-top: 20px;
+}
+
+h4 {
+  padding-top: 30px;
+}
+
+// Only necessary for window height sized blocks.
+ html, body, .block {
+   height: 100%;
+ }
+
+ // Class for when element is above threshold
+.pin-top {
+  position: relative;
+}
+
+// Class for when element is below threshold
+.pin-bottom {
+  position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+  position: fixed !important;
 }

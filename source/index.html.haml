@@ -1,0 +1,24 @@
+%h1 Hello! This is my portfolio.
+
+%h2 Projects
+.projects
+  - data.projects.each do |project|
+    %h4= project[:name]
+    %h5= project[:used]
+    %p= project[:description]
+
+%h2 Education
+.education
+  - data.education.each do |education|
+    %h4= education[:school]
+    %h5= education[:course]
+    %p= education[:time]
+    %p= education[:description]
+
+%h2 Workplaces
+.work
+  - data.work.each do |work|
+    %h4= work[:work]
+    %h5= work[:time]
+    %p= work[:skills]
+    %p= work[:description]
