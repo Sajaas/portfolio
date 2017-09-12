@@ -29,7 +29,7 @@ a {
 
   &:focus,
   &:hover {
-    color: #2E86C1;
+    color: #1B779B;
   }
 }
 
@@ -46,6 +46,11 @@ h4 {
   padding-top: 20px;
 }
 
+h5 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .nav-wrapper {
   background-color: #0C223A;
   font-size: 40px;
@@ -57,7 +62,7 @@ h4 {
 }
 
 nav ul li:hover {
-   background-color: #2E86C1;
+   background-color: #1B779B;
 }
 
 .white-text li a{
@@ -111,7 +116,7 @@ footer.page-footer {
 }
 
 .welcome {
-  background-color: #0C7489;
+  background-color: #145872;
 }
 
 .projects {
