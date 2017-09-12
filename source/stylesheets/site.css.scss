@@ -31,17 +31,17 @@ h4 {
 }
 
 .nav-wrapper {
-  background-color: #ffffcc;
-  color: #ff6600;
+  background-color: #FF4600;
 }
 
-.orange-text li a{
-  color: #ff6600;
+nav ul li:hover {
+   background-color: #FF2300;
+}
+
+.white-text li a{
+  color: #ffffcc;
  }
 
-.orange-text {
-  color: #ff6600
-}
 //Materialize pushpin stuff:
 // // Only necessary for window height sized blocks.
 //  html, body, .block {
@@ -61,4 +61,18 @@ h4 {
 // Class for when element is pinned
 .pinned {
   position: fixed !important;
+}
+
+.devicon-git-plain {
+  max-width: 2em;
+}
+
+/* if you want to change the original color */
+.devicon-git-plain path {
+  fill: #4691f6;
+}
+
+i {
+  font-size: 50px;
+  letter-spacing: 30px;
 }

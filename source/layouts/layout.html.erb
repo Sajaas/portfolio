@@ -3,9 +3,11 @@
   <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <link rel="icon" href="AAA-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="source/javascripts/site.js"></script>
     <link rel="stylesheet" href="source/stylesheets/site.css.scss">
     <meta charset="utf-8">
@@ -17,17 +19,22 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="orange-text brand-logo">Logo</a>
-        <ul class="orange-text right hide-on-med-and-down">
-          <li><a href="about.html.haml"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-          <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
-        </ul>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="white-text brand-logo"><img class="responsive-img" id="logo" src="logga.jpg"/>Welcome!</a>
+            <ul class="white-text right hide-on-med-and-down">
+              <li><a href="about.html.haml">About me</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Work</a></li>
+              <li><a href="">Education</a></li>
+
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+
     <%= yield %>
     <%= partial 'partials/footer'%>
-    <%= partial 'partials/header'%>
   </body>
 </html>
