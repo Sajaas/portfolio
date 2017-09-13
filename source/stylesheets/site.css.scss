@@ -1,3 +1,28 @@
+html, body, .block {
+  height: 100%;
+}
+
+// Class for when element is above threshold
+.pin-top {
+ position: relative;
+}
+
+// Class for when element is below threshold
+.pin-bottom {
+ position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+ position: fixed !important;
+}
+
+//to remove padding or not to, that is the question. TODO
+collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li{
+  margin: 0!important;;
+  padding: 0!important;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -7,11 +32,6 @@
 .collapsible-header {
   background-color: #08415C;
   height: 50%;
-}
-
-collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li{
-  margin: 0!important;;
-  padding: 0!important;
 }
 
 img.top {
@@ -66,7 +86,7 @@ i.github {
 }
 
 i {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 a.menu {
@@ -139,21 +159,6 @@ html, body {
    min-height: 100%;
  }
 
- // Class for when element is above threshold
-.pin-top {
-  position: relative;
-}
-
-// Class for when element is below threshold
-.pin-bottom {
-  position: relative;
-}
-
-// Class for when element is pinned
-.pinned {
-  position: fixed !important;
-}
-
 .devicon-git-plain {
   max-width: 2em;
 }
@@ -178,66 +183,47 @@ footer.page-footer {
   padding-top: 0px;
 }
 
-.languages, .welcome, .work, .education, .projects, .about {
+.block {
   padding-bottom: 50px;
-  min-height: 600px;
 }
-
-// .welcome {
-//   background-color: #145872;
-//   font-size: 50px;
-// }
 
 #welcome {
   background-color: #145872;
   font-size: 50px;
   padding-bottom: 50px;
   padding-top: 20px;
+  // min-height: 600px;
 }
-
-// .projects {
-//   background-color: #085463;
-// }
 
 #projects {
   background-color: #085463;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
+  // min-height: 600px;
 }
-
-// .languages {
-//   background-color: #145F72;
-// }
 
 #languages {
   background-color: #145F72;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
+  // min-height: 600px;
 }
-
-// .work  {
-//   background-color: #08415C;
-// }
 
 #work  {
   background-color: #08415C;
-  padding-bottom: 50px;
+  min-height: 600px;
+  // padding-bottom: 50px;
+  // min-height: 600px;
 }
-
-// .education {
-//   background-color: #033F63;
-// }
 
 #education {
   background-color: #033F63;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
+  // min-height: 600px;
 }
-
-// .about {
-//   background-color: #112E4F;
-// }
 
 #about {
   background-color: #112E4F;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
+  // min-height: 600px;
 }
 
 div.credit {

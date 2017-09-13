@@ -1,10 +1,4 @@
 #top
--# .welcome
-  -# .container
-  -# #welcome
-  -#   %h1 Amanda's portfolio
-  -#   %img(src="/images/loggav.png")
-  -#   %h5 I'm a mid twenties proffesional book lover and junior developer.
 
 #welcome.block
   %nav.pushpin-demo-nav.pinned{"data-target" => "welcome", :style => "top: 0px;"}
@@ -68,25 +62,6 @@
     %i.devicon-photoshop-plain
     %i.devicon-slack-plain
 
--# .languages
--#   .container
--#     #languages
--#     %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
--#     %h3.padding Swedish & English
--#     %i.devicon-ruby-plain
--#     %i.devicon-javascript-plain
--#     %i.devicon-css3-plain
--#     %i.devicon-html5-plain
--#     %i.devicon-jquery-plain
--#     %i.devicon-foundation-plain
--#     %i.devicon-cucumber-plain
--#     %i.devicon-jasmine-plain
--#     %i.devicon-github-plain
--#     %i.devicon-heroku-plain
--#     %i.devicon-postgresql-plain
--#     %i.devicon-photoshop-plain
--#     %i.devicon-slack-plain
-
 #projects.block
   %nav.pushpin-demo-nav.pin-top{"data-target" => "projects", :style => "top: 0px;"}
     .nav-wrapper
@@ -129,29 +104,6 @@
             %a{:href => "#{project[:link]}", :target => "_blank"} Link to project
             %p= project[:description]
 
--# .projects
--#   .container
--#     #projects
--#     %a{:href => "https://github.com/sajaas", :target => "_blank"}
--#       %i.github.fa.fa-github.fa-5x{"aria-hidden" => "true"}
--#     %ul.collapsible{"data-collapsible" => "accordion"}
--#       %li
--#         .collapsible-header.active
--#           %center-align.full-width
--#             Projects
--#         .collapsible-body
--#           %p Click on titles to open project descritions
--#           %p Click on the Gitbub symbol to go to my github
--#     - data.projects.each do |project|
--#       %ul.collapsible{"data-collapsible" => "accordion"}
--#         %li
--#           .collapsible-header
--#             %center-align.full-width= project[:name]
--#           .collapsible-body
--#             %span
--#             %h5= project[:used]
--#             %p= project[:description]
-
 #work.block
   %nav.pushpin-demo-nav.pin-top{"data-target" => "work", :style => "top: 0px;"}
     .nav-wrapper
@@ -172,25 +124,14 @@
         %li
           %a{:href => "#top"}
             %i.material-icons.menu arrow_upward
-  #work.block.container
-    %i.large.material-icons work
-    - data.work.each do |work|
-      %h3.padding= work[:work]
-      %h5= work[:time]
-      %p= work[:skills]
-      %p= work[:description]
-      %p= work[:description2]
-
--# .work
--#   .container
--#     #work
--#     %i.large.material-icons work
--#     - data.work.each do |work|
--#       %h3.padding= work[:work]
--#       %h5= work[:time]
--#       %p= work[:skills]
--#       %p= work[:description]
--#       %p= work[:description2]
+    .container
+      %i.large.material-icons work
+      - data.work.each do |work|
+        %h3.padding= work[:work]
+        %h5= work[:time]
+        %p= work[:skills]
+        %p= work[:description]
+        %p= work[:description2]
 
 #education.block
   %nav.pushpin-demo-nav.pin-top{"data-target" => "education", :style => "top: 0px;"}
@@ -221,18 +162,6 @@
       %p= education[:description]
       %p= education[:second]
       %p= education[:third]
-
--# .education
--#   .container
--#     #education
--#     %i.large.material-icons school
--#     - data.education.each do |education|
--#       %h3.padding= education[:school]
--#       %h5= education[:course]
--#       %p= education[:time]
--#       %p= education[:description]
--#       %p= education[:second]
--#       %p= education[:third]
 
 #about.block
   %nav.pushpin-demo-nav.pin-top{"data-target" => "about", :style => "top: 0px;"}
@@ -265,19 +194,5 @@
     %h6 Book-lover, organiser, gamer, traveller, sword fighter
     %p.body I've always loved building things - wether it's been wardrobes, stories or websites. Structuring and organising is a weirdly passionate subject for me. This is partly why I'm looking to work with development!
     %p.body I enjoy playing all kinds of games with friends (board-, role-, computer- and videogames), when I have to train I do it with swords, and I try to read as often as I can. When I get the chance to travel I gladly make plans and prepare what to pack.
-
--# .about.pushpin-live{"data-target" => "about"}
--#   .container
--#     #about
--#     %i.large.material-icons person
--#     %br
--#     %i.fa.fa-book.fa-4x{"aria-hidden" => "true"}
--#     %i.fa.fa-puzzle-piece.fa-4x{"aria-hidden" => "true"}
--#     %i.fa.fa-gamepad.fa-4x{"aria-hidden" => "true"}
--#     %i.fa.fa-plane.fa-4x{"aria-hidden" => "true"}
--#     %img.bottom(src="/images/swords.svg")
--#     %h6 Book-lover, organiser, gamer, traveller, sword fighter
--#     %p.body I've always loved building things - wether it's been wardrobes, stories or websites. Structuring and organising is a weirdly passionate subject for me. This is partly why I'm looking to work with development!
--#     %p.body I enjoy playing all kinds of games with friends (board-, role-, computer- and videogames), when I have to train I do it with swords, and I try to read as often as I can. When I get the chance to travel I gladly make plans and prepare what to pack.
 
 #contact
