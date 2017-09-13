@@ -1,8 +1,10 @@
 %footer.page-footer
   %h3.nopadding Contact
   %p Please feel free to contact me if you have a question, want to talk about books, or want to play Dota 2.
-  %a{:href => "mailto:amanda@alling.org", :target => "_blank"}
-    %i.footer.fa.fa-envelope.fa-4x{"aria-hidden" => "true"}
+  #wrapper
+  #copymail amanda(at)alling.org
+  #hovermail.text Click envelope to copy amanda(at)alling.org
+  %button.hover.i.footer.fa.fa-envelope.fa-4x{:onclick => "copyToClipboard('#copymail')"}
   %a{:href => "https://www.facebook.com/sajaas", :target => "_blank"}
     %i.footer.fa.fa-facebook-official.fa-4x{"aria-hidden" => "true"}
   %a{:href => "https://www.linkedin.com/in/amanda-alling-andr%C3%A9n-033201116/", :target => "_blank"}
@@ -15,4 +17,11 @@
     %i.footer.fa.fa-book.fa-4x{"aria-hidden" => "true"}
   .footer-copyright.white-text
     .container
-      © 2017 Copyright Amanda Alling Andrén
+      © 2017 Copyright Amanda Alling Andrén - amanda(at)alling.org
+      %div.credit
+        (Sword icon made by
+        %a{:href => "http://www.freepik.com", :title => "Freepik"} Freepik
+        from
+        %a{:href => "https://www.flaticon.com/", :title => "Flaticon"} www.flaticon.com
+        is licensed by
+        %a{:href => "http://creativecommons.org/licenses/by/3.0/", :target => "_blank", :title => "Creative Commons BY 3.0"} CC 3.0 BY. Thanks!)
