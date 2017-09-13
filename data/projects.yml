@@ -1,35 +1,44 @@
 - name: FizzBuzz Ruby
   used: Ruby, Rspec
+  link: https://github.com/Sajaas/prep/tree/master/week_3/fizz_buzz
   description: My first test driven ruby project
 
 - name: ATM
   used: Ruby, Rspec
+  link: https://github.com/Sajaas/atm
   description: Simulates an ATM
 
 - name: Library Challenge
   used: Ruby, Rspec
+  link: https://github.com/Sajaas/library-challenge
   description: My first weekend challenge, where you work alone. I created a library system which allows a user to checkout a book, with a simple UI and a menu that takes input.
 
 - name: BMI
   used: Javascript, CSS, HTML5, Jasmine
+  link: https://sajaas.github.io/BMI/index.html
   description: A website which allows you to calculate your BMI, with metric or imperial methods. First time I got to deploy something to github pages and apply some css.
 
 - name: Checkout Bonus challenge
   used: Ruby, Rspec
+  link: https://github.com/Sajaas/checkout_bonus_challenge
   description: A project where I simulated a shopping system which had different promotions that should apply to the total cost.
 
 - name: FizzBuzz JS
   used: Javascript, CSS, HTML5, Karma
+  link: https://sajaas.github.io/fizz_buzz_js/
   description: A weekend challenge where you work alone. I had to create an UI for my FizzBuzz code, deploy on github pages and style with css.
 
 - name: SlowFood
   used: Ruby, CSS, HTML5, Datamapper, Sinatra, Cucumber, Rspec
+  link: https://spice-it-up.herokuapp.com/
   description: My first group project! We deployed a site which allows a customer to log in and order food.
 
 - name: Portfolio
   used: Ruby, CSS, Haml, Rspec, middleman
+  link: https://github.com/Sajaas/portfolio
   description: This portfolio! Woho!
 
 - name: Just for fun!
   used: Other projects that I love to work with
-  description: Book blog (saybooks.blogspot.com)
+  link: https://saybooks.blogspot.se/
+  description: Book blog

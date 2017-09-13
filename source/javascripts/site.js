@@ -21,7 +21,6 @@ $(document).ready(function(){
   $('.hover').mouseout(function() {
     $('.text').css("visibility","hidden");
   });
-
 });
 
 function copyToClipboard(element) {
@@ -31,3 +30,7 @@ $temp.val($(element).html()).select();
 document.execCommand("copy");
 $temp.remove();
 }
+
+// $(document).ready(function(){
+//     $('.collapsible').collapsible();
+//   });
