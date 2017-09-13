@@ -8,7 +8,7 @@
 
 - name: Library Challenge
   used: Ruby, Rspec
-  description: My first weekend challenge, where you work alone. I created a library system which allows a user to checkout a book, with a simple UI and a menu that takes input from the user.
+  description: My first weekend challenge, where you work alone. I created a library system which allows a user to checkout a book, with a simple UI and a menu that takes input.
 
 - name: BMI
   used: Javascript, CSS, HTML5, Jasmine
@@ -31,5 +31,5 @@
   description: This portfolio! Woho!
 
 - name: Just for fun!
-  used: other projects that I love to work with
+  used: Other projects that I love to work with
   description: Book blog (saybooks.blogspot.com)

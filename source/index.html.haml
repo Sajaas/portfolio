@@ -1,16 +1,16 @@
 #top
-
-.welcome.box
+.welcome.pushpin-live{"data-target" => "welcome"}
   .container
+  #welcome
     %h1 Amanda's portfolio
-    %i.top.fa.fa-font.fa-5x{"aria-hidden" => "true"}
+    %img(src="/images/loggav.png")
     %h5 I'm a mid twenties proffesional book lover and junior developer.
 
-.languages
+.languages.pushpin-live{"data-target" => "languages"}
   .container
     #languages
     %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
-    %h3 Swedish & English
+    %h3.padding Swedish & English
     %i.devicon-ruby-plain
     %i.devicon-javascript-plain
     %i.devicon-css3-plain
@@ -25,42 +25,45 @@
     %i.devicon-photoshop-plain
     %i.devicon-slack-plain
 
-.projects
+.projects.pushpin-live{"data-target" => "projects"}
   .container
     #projects
     %a{:href => "https://github.com/sajaas", :target => "_blank"}
       %i.github.fa.fa-github.fa-5x{"aria-hidden" => "true"}
     - data.projects.each do |project|
-      %h3= project[:name]
-      %h5= project[:used]
-      %p= project[:description]
+      %ul.collapsible{"data-collapsible" => "accordion"}
+        %li
+          .collapsible-header
+            %h3.nopadding.center-align.full-width= project[:name]
+          .collapsible-body
+            %span
+            %h5= project[:used]
+            %p= project[:description]
 
-.work
+.work.pushpin-live{"data-target" => "work"}
   .container
     #work
     %i.large.material-icons work
     - data.work.each do |work|
-      %h3= work[:work]
+      %h3.padding= work[:work]
       %h5= work[:time]
       %p= work[:skills]
       %p= work[:description]
       %p= work[:description2]
 
-
-.education
+.education.pushpin-live{"data-target" => "education"}
   .container
     #education
     %i.large.material-icons school
     - data.education.each do |education|
-      %h3= education[:school]
+      %h3.padding= education[:school]
       %h5= education[:course]
       %p= education[:time]
       %p= education[:description]
       %p= education[:second]
       %p= education[:third]
 
-
-.about.box
+.about.pushpin-live{"data-target" => "about"}
   .container
     #about
     %i.large.material-icons person
