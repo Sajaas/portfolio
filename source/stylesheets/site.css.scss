@@ -6,6 +6,12 @@
 
 .collapsible-header {
   background-color: #0C223A;
+  height: 50%;
+}
+
+collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li{
+  margin: 0!important;;
+  padding: 0!important;
 }
 
 img {
@@ -50,6 +56,7 @@ i.top {
 i.github {
   font-size: 120px;
   letter-spacing: 0px;
+  padding-bottom: 20px;
 }
 
 i {
@@ -91,12 +98,6 @@ h3.nopadding {
   padding: 0px;
   text-align: center;
 }
-
-h3.collapsible-header li{
-  padding: 50px;
-}
-
-
 
 h4 {
   padding-top: 20px;

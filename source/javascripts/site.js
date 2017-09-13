@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
+
 // $(document).ready(function(){
 //   $('.target').pushpin({
 //     top: 0,

@@ -30,11 +30,19 @@
     #projects
     %a{:href => "https://github.com/sajaas", :target => "_blank"}
       %i.github.fa.fa-github.fa-5x{"aria-hidden" => "true"}
+    %ul.collapsible{"data-collapsible" => "accordion"}
+      %li
+        .collapsible-header.active
+          %center-align.full-width
+            Projects
+        .collapsible-body
+          %p Press on titles to open project descritions
+          %p Press on the Gitbub symbol to go to my github
     - data.projects.each do |project|
       %ul.collapsible{"data-collapsible" => "accordion"}
         %li
           .collapsible-header
-            %h3.nopadding.center-align.full-width= project[:name]
+            %center-align.full-width= project[:name]
           .collapsible-body
             %span
             %h5= project[:used]
