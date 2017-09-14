@@ -29,6 +29,12 @@ collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li{
   width: 50%;
 }
 
+.container.half {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+
 .collapsible-header {
   background-color: #08415C;
   height: 50%;
@@ -47,7 +53,8 @@ img.bottom {
 }
 
 p.bodys {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 ul#lang {
@@ -90,8 +97,16 @@ a.menu {
   color: white;
 }
 
-a {
+a.colorblue {
   color: white;
+    &:focus,
+    &:hover {
+      color: #073F6F;
+    }
+}
+
+a {
+  color: #AAC2DB;
 
   &:focus,
   &:hover {
@@ -130,6 +145,10 @@ h5 {
   padding-bottom: 20px;
 }
 
+h5.nopadding {
+  padding: 0px;
+}
+
 h6 {
   font-size: 30px;
 }
@@ -145,7 +164,7 @@ h6 {
 }
 
 nav ul li:hover {
-   background-color: white;
+   background-color: #073F6F;
 }
 
 .white-text li a{

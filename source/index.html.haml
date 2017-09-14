@@ -1,50 +1,12 @@
 #top
 
 #welcome.block
-  -# %nav.pushpin-demo-nav{"data-target" => "welcome", :style => "top: 0px;"}
-  -#   .nav-wrapper
-  -#     %a.brand-logo Amanda Alling Andrén
-  -#     %ul#nav-mobile.right.hide-on-med-and-down
-  -#       %li
-  -#         %a{:href => "#languages"} Languages & tools
-  -#       %li
-  -#         %a{:href => "#projects"} Projects
-  -#       %li
-  -#         %a{:href => "#work"} Work
-  -#       %li
-  -#         %a{:href => "#education"} Education
-  -#       %li
-  -#         %a{:href => "#about"} About me
-  -#       %li
-  -#         %a{:href => "#contact"} Contact
-  -#       %li
-  -#         %a{:href => "#top"}
-  -#           %i.material-icons.menu arrow_upward
   .container
     %h1 Amandas portfolio
     %img.top(src="/images/loggav.png")
     %h5 I'm a mid twenties professional book lover and junior developer.
 
 #languages.block
-  -# %nav.pushpin-demo-nav{"data-target" => "languages", :style => "top: 0px;"}
-  -#   .nav-wrapper
-  -#     %a.brand-logo Languages & tools
-  -#     %ul#nav-mobile.right.hide-on-med-and-down
-  -#       %li
-  -#         %a{:href => "#languages"} Languages & tools
-  -#       %li
-  -#         %a{:href => "#projects"} Projects
-  -#       %li
-  -#         %a{:href => "#work"} Work
-  -#       %li
-  -#         %a{:href => "#education"} Education
-  -#       %li
-  -#         %a{:href => "#about"} About me
-  -#       %li
-  -#         %a{:href => "#contact"} Contact
-  -#       %li
-  -#         %a{:href => "#top"}
-  -#           %i.material-icons.menu arrow_upward
   .container
     %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
     %h3.padding Swedish & English
@@ -66,36 +28,17 @@
     %i.devicon-slack-plain
 
 #projects.block
-  -# %nav.pushpin-demo-nav{"data-target" => "projects", :style => "top: 0px;"}
-  -#   .nav-wrapper
-  -#     %a.brand-logo Projects
-  -#     %ul#nav-mobile.right.hide-on-med-and-down
-  -#       %li
-  -#         %a{:href => "#languages"} Languages & tools
-  -#       %li
-  -#         %a{:href => "#projects"} Projects
-  -#       %li
-  -#         %a{:href => "#work"} Work
-  -#       %li
-  -#         %a{:href => "#education"} Education
-  -#       %li
-  -#         %a{:href => "#about"} About me
-  -#       %li
-  -#         %a{:href => "#contact"} Contact
-  -#       %li
-  -#         %a{:href => "#top"}
-  -#           %i.material-icons.menu arrow_upward
   .container
-    %a{:href => "https://github.com/sajaas", :target => "_blank"}
+    %a.menu{:href => "https://github.com/sajaas", :target => "_blank"}
       %i.github.fa.fa-github.fa-5x{"aria-hidden" => "true"}
     %ul.collapsible{"data-collapsible" => "accordion"}
       %li
         .collapsible-header.active
-          %center-align.full-width
+          %h5.nopadding.center-align.full-width
             Projects
         .collapsible-body
           %p Click on titles to open project descriptions
-          %p Click on the Gitbub symbol to go to my github
+          %p Click on the Gitbub symbol to go to my Github
     - data.projects.each do |project|
       %ul.collapsible{"data-collapsible" => "accordion"}
         %li
@@ -108,84 +51,29 @@
             %p= project[:description]
 
 #work.block
-  -# %nav.pushpin-demo-nav{"data-target" => "work", :style => "top: 0px;"}
-  -#   .nav-wrapper
-  -#     %a.brand-logo Work
-  -#     %ul#nav-mobile.right.hide-on-med-and-down
-  -#       %li
-  -#         %a{:href => "#languages"} Languages & tools
-  -#       %li
-  -#         %a{:href => "#projects"} Projects
-  -#       %li
-  -#         %a{:href => "#work"} Work
-  -#       %li
-  -#         %a{:href => "#education"} Education
-  -#       %li
-  -#         %a{:href => "#about"} About me
-  -#       %li
-  -#         %a{:href => "#contact"} Contact
-  -#       %li
-  -#         %a{:href => "#top"}
-  -#           %i.material-icons.menu arrow_upward
   .container
     %i.large.material-icons work
     - data.work.each do |work|
       %h3.padding= work[:work]
       %h5= work[:time]
-      %p= work[:skills]
+      %a{:href => "#{work[:link]}", :target => "_blank"} Website
+      %p.bodys= work[:skills]
       %p= work[:description]
       %p= work[:description2]
 
 #education.block
-  -# %nav.pushpin-demo-nav{"data-target" => "education", :style => "top: 0px;"}
-  -#   .nav-wrapper
-  -#     %a.brand-logo Education
-  -#     %ul#nav-mobile.right.hide-on-med-and-down
-  -#       %li
-  -#         %a{:href => "#languages"} Languages & tools
-  -#       %li
-  -#         %a{:href => "#projects"} Projects
-  -#       %li
-  -#         %a{:href => "#work"} Work
-  -#       %li
-  -#         %a{:href => "#education"} Education
-  -#       %li
-  -#         %a{:href => "#about"} About me
-  -#       %li
-  -#         %a{:href => "#contact"} Contact
-  -#       %li
-  -#         %a{:href => "#top"}
-  -#           %i.material-icons.menu arrow_upward
   .container
     %i.large.material-icons school
     - data.education.each do |education|
       %h3.padding= education[:school]
       %h5= education[:course]
+      %a{:href => "#{education[:link]}", :target => "_blank"} Website
       %p= education[:time]
       %p= education[:description]
       %p= education[:second]
       %p= education[:third]
 
 #about.block
-  -# %nav.pushpin-demo-nav{"data-target" => "about", :style => "top: 0px;"}
-  -#   .nav-wrapper
-  -#     %a.brand-logo About me
-  -#     %ul#nav-mobile.right.hide-on-med-and-down
-  -#       %li
-  -#         %a{:href => "#languages"} Languages & tools
-  -#       %li
-  -#         %a{:href => "#projects"} Projects
-  -#       %li
-  -#         %a{:href => "#work"} Work
-  -#       %li
-  -#         %a{:href => "#education"} Education
-  -#       %li
-  -#         %a{:href => "#about"} About me
-  -#       %li
-  -#         %a{:href => "#contact"} Contact
-  -#       %li
-  -#         %a{:href => "#top"}
-  -#           %i.material-icons.menu arrow_upward
   .container
     %i.large.material-icons person
     %br
