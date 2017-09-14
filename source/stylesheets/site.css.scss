@@ -2,22 +2,21 @@ html, body, .block {
   height: 100%;
 }
 
-// Class for when element is above threshold
-.pin-top {
- position: relative;
-}
+// // Class for when element is above threshold
+// .pin-top {
+//  position: relative;
+// }
+//
+// // Class for when element is below threshold
+// .pin-bottom {
+//  position: relative;
+// }
+//
+// // Class for when element is pinned
+// .pinned {
+//  position: fixed !important;
+// }
 
-// Class for when element is below threshold
-.pin-bottom {
- position: relative;
-}
-
-// Class for when element is pinned
-.pinned {
- position: fixed !important;
-}
-
-//to remove padding or not to, that is the question. TODO
 collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li{
   margin: 0!important;;
   padding-bottom: 1!important;
@@ -27,13 +26,7 @@ collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li{
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 50%;
-}
-
-.container.half {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 80%;
+  width: 60%;
 }
 
 .collapsible-header {
@@ -212,6 +205,7 @@ footer.page-footer {
 
 #languages {
   background-color: #145872;
+  height: auto;
 }
 
 #work  {
@@ -226,6 +220,7 @@ footer.page-footer {
 
 #about {
   background-color: #112E4F;
+  height: auto;
 }
 
 div.credit {
