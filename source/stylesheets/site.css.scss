@@ -69,6 +69,11 @@ body {
 i.menu {
   padding: 0px;
   color: white;
+  text-align: center;
+}
+
+i.devicon {
+  padding: 0px;
 }
 
 i.top {
@@ -92,6 +97,8 @@ i.symbolgithub {
 i {
   padding-top: 80px;
   padding-bottom: 10px;
+  font-size: 50px;
+  letter-spacing: 30px;
 }
 
 a.menu {
@@ -172,11 +179,6 @@ nav ul li:hover {
   color: white;
  }
 
-i {
-  font-size: 50px;
-  letter-spacing: 30px;
-}
-
 i.footer {
   padding-top: 0px;
 }
@@ -207,6 +209,7 @@ footer.page-footer {
 #languages {
   background-color: #145872;
   height: auto;
+  overflow: auto;
 }
 
 #work  {
@@ -251,4 +254,58 @@ visibility:hidden;
   &:hover {
     color: #1B779B;
   }
+}
+
+@media screen and (max-width: 600px) {
+  #title_message {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+//show text on icons
+
+.navs ul {
+}
+
+.showtext li {
+    display:block;
+    float: left;
+    height:120px;
+    width: 200px;
+    text-align: center;
+    // transition: all 0.2s ease-in-out;
+    // letter-spacing: 10px;
+}
+
+.showtext li a {
+    // font-family: FontAwesome;
+    // color:#eee;
+    // font-size:22pt;
+    // text-decoration: none;
+    display: block;
+    padding:15px;
+}
+.showtext li i {
+    color:#fff;
+    // padding:0 10px;
+}
+.showtext li b {
+    // padding: 15px 0;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    display: none;
+}
+.showtext a:hover {
+    color: #fff;
+}
+.showtext a:hover i {
+    display: none;
+}
+.showtext a:hover b {
+    display: block;
 }
