@@ -282,21 +282,26 @@ visibility:hidden;
 
 //show text when hovering on icons
 
+// .showtext ul li {
+//   display: inline;
+//   text-align: center;
+// }
+
 .showtext li {
-    display:block;
-    float: left;
-    height:80px;
+    display:inline-block; //centers and glitch
+    float: left; //no glitch, no center TODO
+    height:100px;
     width: 100px;
     text-align: center;
-    // transition: all 0.2s ease-in-out;
-    // letter-spacing: 10px;
+    letter-spacing: 0px;
+    transition: all 0.2s ease-in-out;
 }
 
 .showtext li i {
-    padding:0 10px;
+    padding: 10px;
 }
 .showtext li b {
-    padding: 10px;
+   padding: 10px;
     display: none;
 }
 
