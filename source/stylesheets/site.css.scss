@@ -112,6 +112,8 @@ a.menu {
 }
 
 a.colorblue {
+  font-size: 16px;
+  text-align: center;
   color: white;
     &:focus,
     &:hover {
@@ -267,12 +269,13 @@ visibility:hidden;
 }
 
 @media screen and (max-width: 600px) {
-  #title_message {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
+  #icons{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #icons{
     display: none;
   }
 }
