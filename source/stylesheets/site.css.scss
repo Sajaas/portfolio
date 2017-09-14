@@ -101,6 +101,12 @@ i {
   letter-spacing: 30px;
 }
 
+i.none {
+  letter-spacing: 0px;
+  padding-top: 80px;
+  text-align: center;
+}
+
 a.menu {
   color: white;
 }
@@ -151,6 +157,10 @@ h4 {
 
 h5 {
   padding-bottom: 20px;
+}
+
+h5.muchpadding {
+  padding-bottom: 80px;
 }
 
 h5.nopadding {
@@ -267,10 +277,7 @@ visibility:hidden;
   }
 }
 
-//show text on icons
-
-.navs ul {
-}
+//show text when hovering on icons
 
 .showtext li {
     display:block;
@@ -282,30 +289,18 @@ visibility:hidden;
     // letter-spacing: 10px;
 }
 
-.showtext li a {
-    // font-family: FontAwesome;
-    // color:#eee;
-    // font-size:22pt;
-    // text-decoration: none;
-    display: block;
-    padding:15px;
-}
 .showtext li i {
-    color:#fff;
-    // padding:0 10px;
+    padding:0 10px;
 }
 .showtext li b {
-    // padding: 15px 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     display: none;
 }
-.showtext a:hover {
-    color: #fff;
-}
-.showtext a:hover i {
+
+.showtext li:hover i {
     display: none;
 }
-.showtext a:hover b {
+
+.showtext li:hover b {
     display: block;
 }
