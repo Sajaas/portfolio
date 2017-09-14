@@ -84,14 +84,21 @@ i.top {
   color: white;
 }
 
-i.github {
+i.symbol {
   font-size: 120px;
   letter-spacing: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+i.symbolgithub {
+  font-size: 140px;
+  letter-spacing: 0px;
+  padding-bottom: 40px;
 }
 
 i {
-  padding-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 10px;
 }
 
 a.menu {
@@ -171,15 +178,6 @@ nav ul li:hover {
 .white-text li a{
   color: white;
  }
-
-.devicon-git-plain {
-  max-width: 2em;
-}
-
-/* if you want to change the original color */
-.devicon-git-plain path {
-  fill: #4691f6;
-}
 
 i {
   font-size: 50px;

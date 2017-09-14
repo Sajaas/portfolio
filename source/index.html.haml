@@ -6,9 +6,32 @@
     %img.top(src="/images/loggav.png")
     %h5 I'm a mid twenties professional book lover and junior developer.
 
+#education.block
+  .container
+    %i.symbol.fa.fa-graduation-cap.fa-5x{"aria-hidden" => "true"}
+    - data.education.each do |education|
+      %h3.padding= education[:school]
+      %h5= education[:course]
+      %a{:href => "#{education[:link]}", :target => "_blank"} Website
+      %p= education[:time]
+      %p= education[:description]
+      %p= education[:second]
+      %p= education[:third]
+
+#work.block
+  .container
+    %i.symbol.fa.fa-briefcase.fa-5x{"aria-hidden" => "true"}
+    - data.work.each do |work|
+      %h3.padding= work[:work]
+      %h5= work[:time]
+      %a{:href => "#{work[:link]}", :target => "_blank"} Website
+      %p.bodys= work[:skills]
+      %p= work[:description]
+      %p= work[:description2]
+
 #languages.block
   .container
-    %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
+    %i.symbol.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
     %h3.padding Swedish & English
     %br
     %br
@@ -30,7 +53,7 @@
 #projects.block
   .container
     %a.menu{:href => "https://github.com/sajaas", :target => "_blank"}
-      %i.github.fa.fa-github.fa-5x{"aria-hidden" => "true"}
+      %i.symbolgithub.fa.fa-github.fa-5x{"aria-hidden" => "true"}
     %ul.collapsible{"data-collapsible" => "accordion"}
       %li
         .collapsible-header.active
@@ -50,32 +73,9 @@
             %a{:href => "#{project[:link]}", :target => "_blank"} Link to project
             %p= project[:description]
 
-#work.block
-  .container
-    %i.large.material-icons work
-    - data.work.each do |work|
-      %h3.padding= work[:work]
-      %h5= work[:time]
-      %a{:href => "#{work[:link]}", :target => "_blank"} Website
-      %p.bodys= work[:skills]
-      %p= work[:description]
-      %p= work[:description2]
-
-#education.block
-  .container
-    %i.large.material-icons school
-    - data.education.each do |education|
-      %h3.padding= education[:school]
-      %h5= education[:course]
-      %a{:href => "#{education[:link]}", :target => "_blank"} Website
-      %p= education[:time]
-      %p= education[:description]
-      %p= education[:second]
-      %p= education[:third]
-
 #about.block
   .container
-    %i.large.material-icons person
+    %i.symbol.fa.fa-user-circle-o.fa-5x{"aria-hidden" => "true"}
     %br
     %i.fa.fa-book.fa-4x{"aria-hidden" => "true"}
     %i.fa.fa-puzzle-piece.fa-4x{"aria-hidden" => "true"}
