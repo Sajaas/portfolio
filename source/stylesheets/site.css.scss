@@ -275,8 +275,8 @@ visibility:hidden;
 .showtext li {
     display:block;
     float: left;
-    height:120px;
-    width: 200px;
+    height:80px;
+    width: 100px;
     text-align: center;
     // transition: all 0.2s ease-in-out;
     // letter-spacing: 10px;
@@ -296,8 +296,8 @@ visibility:hidden;
 }
 .showtext li b {
     // padding: 15px 0;
-    // padding-top: 10px;
-    // padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: none;
 }
 .showtext a:hover {
