@@ -6,7 +6,7 @@
 - name: ATM
   used: Ruby, Rspec
   link: https://github.com/Sajaas/atm
-  description: Simulates an ATM
+  description: Simulates an ATM, where you can create an account, make a deposit and withdraw cash
 
 - name: Library Challenge
   used: Ruby, Rspec

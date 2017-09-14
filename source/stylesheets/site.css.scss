@@ -20,7 +20,8 @@ html, body, .block {
 //to remove padding or not to, that is the question. TODO
 collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li{
   margin: 0!important;;
-  padding: 0!important;
+  padding-bottom: 1!important;
+  padding-top: 1!important;
 }
 
 .container {
@@ -200,7 +201,7 @@ footer.page-footer {
 }
 
 #welcome {
-  background-color: #145872;
+  background-color: #145F72;
   font-size: 50px;
   padding-bottom: 50px;
   padding-top: 20px;
@@ -212,7 +213,7 @@ footer.page-footer {
 }
 
 #languages {
-  background-color: #145F72;
+  background-color: #145872;
 }
 
 #work  {
