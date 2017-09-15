@@ -6,7 +6,9 @@ $(document).ready(function(){
     $('.text').css("visibility","visible");
   });
   $('.collapsible').collapsible();
-  $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav({
+    closeOnClick: true
+  });
 });
 
 function copyToClipboard(element) {
