@@ -27,6 +27,36 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+
+    <header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper"> <a href="#top" class="menu colorblue brand-logo">Amanda</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="menu material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#work">Work</a></li>
+                  <li><a href="#languages">Languages & tools</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#top"><i class="material-icons menu">arrow_upward</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+   <!-- Move the sidenav outside of .navbar-fixed -->
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#education">Education</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#languages">Languages & tools</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+  <!-- <div class ="navbar-fixed"
     <nav>
       <div class="nav-wrapper">
           <a class="menu colorblue brand-logo" href="#top">Amanda Alling Andrén</a>
@@ -50,6 +80,7 @@
           </ul>
       </div>
     </nav>
+  </div> -->
     <%= yield %>
     <%= partial 'partials/footer'%>
   </body>
