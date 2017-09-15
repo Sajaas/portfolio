@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  $(".button-collapse").sideNav();
   $('.hover').mouseout(function() {
     $('.text').css("visibility","hidden");
   });
@@ -7,6 +6,7 @@ $(document).ready(function(){
     $('.text').css("visibility","visible");
   });
   $('.collapsible').collapsible();
+  $(".button-collapse").sideNav();
 });
 
 function copyToClipboard(element) {
