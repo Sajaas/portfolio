@@ -1,0 +1,201 @@
+-# #top
+-#
+-# #welcome.block
+-#   -# %nav.pushpin-demo-nav{"data-target" => "welcome", :style => "top: 0px;"}
+-#   -#   .nav-wrapper
+-#   -#     %a.brand-logo Amanda Alling Andrén
+-#   -#     %ul#nav-mobile.right.hide-on-med-and-down
+-#   -#       %li
+-#   -#         %a{:href => "#languages"} Languages & tools
+-#   -#       %li
+-#   -#         %a{:href => "#projects"} Projects
+-#   -#       %li
+-#   -#         %a{:href => "#work"} Work
+-#   -#       %li
+-#   -#         %a{:href => "#education"} Education
+-#   -#       %li
+-#   -#         %a{:href => "#about"} About me
+-#   -#       %li
+-#   -#         %a{:href => "#contact"} Contact
+-#   -#       %li
+-#   -#         %a{:href => "#top"}
+-#   -#           %i.material-icons.menu arrow_upward
+-#   .container
+-#     %h1 Amandas portfolio
+-#     %img.top(src="/images/loggav.png")
+-#     %h5 I'm a mid twenties professional book lover and junior developer.
+-#
+-# #languages.block
+-#   -# %nav.pushpin-demo-nav{"data-target" => "languages", :style => "top: 0px;"}
+-#   -#   .nav-wrapper
+-#   -#     %a.brand-logo Languages & tools
+-#   -#     %ul#nav-mobile.right.hide-on-med-and-down
+-#   -#       %li
+-#   -#         %a{:href => "#languages"} Languages & tools
+-#   -#       %li
+-#   -#         %a{:href => "#projects"} Projects
+-#   -#       %li
+-#   -#         %a{:href => "#work"} Work
+-#   -#       %li
+-#   -#         %a{:href => "#education"} Education
+-#   -#       %li
+-#   -#         %a{:href => "#about"} About me
+-#   -#       %li
+-#   -#         %a{:href => "#contact"} Contact
+-#   -#       %li
+-#   -#         %a{:href => "#top"}
+-#   -#           %i.material-icons.menu arrow_upward
+-#   .container
+-#     %i.fa.fa-wrench.fa-5x{"aria-hidden" => "true"}
+-#     %h3.padding Swedish & English
+-#     %br
+-#     %br
+-#     %i.devicon-ruby-plain
+-#     %i.devicon-javascript-plain
+-#     %i.devicon-css3-plain
+-#     %i.devicon-html5-plain
+-#     %i.devicon-jquery-plain
+-#     %i.devicon-foundation-plain
+-#     %br
+-#     %i.devicon-cucumber-plain
+-#     %i.devicon-jasmine-plain
+-#     %i.devicon-github-plain
+-#     %i.devicon-heroku-plain
+-#     %i.devicon-postgresql-plain
+-#     %i.devicon-photoshop-plain
+-#     %i.devicon-slack-plain
+-#
+-# #projects.block
+-#   -# %nav.pushpin-demo-nav{"data-target" => "projects", :style => "top: 0px;"}
+-#   -#   .nav-wrapper
+-#   -#     %a.brand-logo Projects
+-#   -#     %ul#nav-mobile.right.hide-on-med-and-down
+-#   -#       %li
+-#   -#         %a{:href => "#languages"} Languages & tools
+-#   -#       %li
+-#   -#         %a{:href => "#projects"} Projects
+-#   -#       %li
+-#   -#         %a{:href => "#work"} Work
+-#   -#       %li
+-#   -#         %a{:href => "#education"} Education
+-#   -#       %li
+-#   -#         %a{:href => "#about"} About me
+-#   -#       %li
+-#   -#         %a{:href => "#contact"} Contact
+-#   -#       %li
+-#   -#         %a{:href => "#top"}
+-#   -#           %i.material-icons.menu arrow_upward
+-#   .container
+-#     %a{:href => "https://github.com/sajaas", :target => "_blank"}
+-#       %i.github.fa.fa-github.fa-5x{"aria-hidden" => "true"}
+-#     %ul.collapsible{"data-collapsible" => "accordion"}
+-#       %li
+-#         .collapsible-header.active
+-#           %h5.nopadding.center-align.full-width
+-#             Projects
+-#         .collapsible-body
+-#           %p Click on titles to open project descriptions
+-#           %p Click on the Gitbub symbol to go to my Github
+-#     - data.projects.each do |project|
+-#       %ul.collapsible{"data-collapsible" => "accordion"}
+-#         %li
+-#           .collapsible-header
+-#             %center-align.full-width= project[:name]
+-#           .collapsible-body
+-#             %span
+-#             %h5= project[:used]
+-#             %a{:href => "#{project[:link]}", :target => "_blank"} Link to project
+-#             %p= project[:description]
+-#
+-# #work.block
+-#   -# %nav.pushpin-demo-nav{"data-target" => "work", :style => "top: 0px;"}
+-#   -#   .nav-wrapper
+-#   -#     %a.brand-logo Work
+-#   -#     %ul#nav-mobile.right.hide-on-med-and-down
+-#   -#       %li
+-#   -#         %a{:href => "#languages"} Languages & tools
+-#   -#       %li
+-#   -#         %a{:href => "#projects"} Projects
+-#   -#       %li
+-#   -#         %a{:href => "#work"} Work
+-#   -#       %li
+-#   -#         %a{:href => "#education"} Education
+-#   -#       %li
+-#   -#         %a{:href => "#about"} About me
+-#   -#       %li
+-#   -#         %a{:href => "#contact"} Contact
+-#   -#       %li
+-#   -#         %a{:href => "#top"}
+-#   -#           %i.material-icons.menu arrow_upward
+-#   .container
+-#     %i.large.material-icons work
+-#     - data.work.each do |work|
+-#       %h3.padding= work[:work]
+-#       %h5= work[:time]
+-#       %p= work[:skills]
+-#       %p= work[:description]
+-#       %p= work[:description2]
+-#
+-# #education.block
+-#   -# %nav.pushpin-demo-nav{"data-target" => "education", :style => "top: 0px;"}
+-#   -#   .nav-wrapper
+-#   -#     %a.brand-logo Education
+-#   -#     %ul#nav-mobile.right.hide-on-med-and-down
+-#   -#       %li
+-#   -#         %a{:href => "#languages"} Languages & tools
+-#   -#       %li
+-#   -#         %a{:href => "#projects"} Projects
+-#   -#       %li
+-#   -#         %a{:href => "#work"} Work
+-#   -#       %li
+-#   -#         %a{:href => "#education"} Education
+-#   -#       %li
+-#   -#         %a{:href => "#about"} About me
+-#   -#       %li
+-#   -#         %a{:href => "#contact"} Contact
+-#   -#       %li
+-#   -#         %a{:href => "#top"}
+-#   -#           %i.material-icons.menu arrow_upward
+-#   .container
+-#     %i.large.material-icons school
+-#     - data.education.each do |education|
+-#       %h3.padding= education[:school]
+-#       %h5= education[:course]
+-#       %p= education[:time]
+-#       %p= education[:description]
+-#       %p= education[:second]
+-#       %p= education[:third]
+-#
+-# #about.block
+-#   -# %nav.pushpin-demo-nav{"data-target" => "about", :style => "top: 0px;"}
+-#   -#   .nav-wrapper
+-#   -#     %a.brand-logo About me
+-#   -#     %ul#nav-mobile.right.hide-on-med-and-down
+-#   -#       %li
+-#   -#         %a{:href => "#languages"} Languages & tools
+-#   -#       %li
+-#   -#         %a{:href => "#projects"} Projects
+-#   -#       %li
+-#   -#         %a{:href => "#work"} Work
+-#   -#       %li
+-#   -#         %a{:href => "#education"} Education
+-#   -#       %li
+-#   -#         %a{:href => "#about"} About me
+-#   -#       %li
+-#   -#         %a{:href => "#contact"} Contact
+-#   -#       %li
+-#   -#         %a{:href => "#top"}
+-#   -#           %i.material-icons.menu arrow_upward
+-#   .container
+-#     %i.large.material-icons person
+-#     %br
+-#     %i.fa.fa-book.fa-4x{"aria-hidden" => "true"}
+-#     %i.fa.fa-puzzle-piece.fa-4x{"aria-hidden" => "true"}
+-#     %i.fa.fa-gamepad.fa-4x{"aria-hidden" => "true"}
+-#     %i.fa.fa-plane.fa-4x{"aria-hidden" => "true"}
+-#     %img.bottom(src="/images/swords.svg")
+-#     %h6 Book-lover, organiser, gamer, traveller, sword fighter
+-#     %p.bodys I've always loved building things - whether it's been wardrobes, stories or websites. Structuring and organising is a weirdly passionate subject for me. This is partly why I'm looking to work with development!
+-#     %p.bodys I enjoy playing all kinds of games with friends (board-, role-, computer- and videogames), when I have to train I do it with swords, and I try to read as often as I can. When I get the chance to travel I gladly make plans and prepare what to pack.
+-#
+-# #contact
