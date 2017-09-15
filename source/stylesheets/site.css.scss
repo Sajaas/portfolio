@@ -268,8 +268,8 @@ visibility:hidden;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #icons{
+@media screen and (min-width: 601px) {
+  #language-icons-replacement{
     display: none;
   }
 }
@@ -287,28 +287,32 @@ visibility:hidden;
 //   text-align: center;
 // }
 
-.showtext li {
-    display:inline-block; //centers and glitch
+.showtext {
+  li {
+    display: inline-block; //centers and glitch
     float: left; //no glitch, no center TODO
     height:100px;
     width: 100px;
     text-align: center;
     letter-spacing: 0px;
     transition: all 0.2s ease-in-out;
-}
-
-.showtext li i {
     padding: 10px;
-}
-.showtext li b {
-   padding: 10px;
-    display: none;
-}
+    vertical-align: middle;
 
-.showtext li:hover i {
-    display: none;
-}
+    i {
+      padding: 10px;
+    }
+    b {
+      padding: 10px;
+      display: none;
+    }
 
-.showtext li:hover b {
-    display: block;
+    &:hover i {
+      display: none;
+    }
+
+    &:hover b {
+      display: block;
+    }
+  }
 }

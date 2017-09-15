@@ -35,47 +35,15 @@
     %h3.padding Swedish & English
     %br
     %br
-    .showtext
-      %ul
-        %li
-          %i.none.devicon-ruby-plain
-          %b Ruby
-        %li
-          %i.none.devicon-javascript-plain
-          %b Javascript
-        %li
-          %i.none.devicon-css3-plain
-          %b CSS3
-        %li
-          %i.none.devicon-html5-plain
-          %b HTML5
-        %li
-          %i.none.devicon-jquery-plain
-          %b jQuery
-        %li
-          %i.none.devicon-foundation-plain
-          %b Foundation
-        %li
-          %i.none.devicon-cucumber-plain
-          %b Cucumber
-        %li
-          %i.none.devicon-jasmine-plain
-          %b Jasmine
-        %li
-          %i.none.devicon-github-plain
-          %b Github
-        %li
-          %i.none.devicon-heroku-plain
-          %b Heroku
-        %li
-          %i.none.devicon-postgresql-plain
-          %b Postgres
-        %li
-          %i.none.devicon-photoshop-plain
-          %b Photoshop
-        %li
-          %i.none.devicon-slack-plain
-          %b Slack
+    - data.languages.each do |languages|
+      #icons
+        .showtext
+          %ul
+            %li
+              %i.none{class: "devicon-#{languages[:icon]}-plain"}
+              %b= languages[:name]
+      #language-icons-replacement
+        = languages[:name]
 
 #projects.block
   .container
