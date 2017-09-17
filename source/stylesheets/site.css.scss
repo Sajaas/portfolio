@@ -2,6 +2,17 @@ html, body, .block {
   height: 100%;
 }
 
+.parallax img {
+   width: 100%;
+}
+
+.overlay{
+  margin: auto;
+  margin-top: 100px;
+  text-align:center;
+  width: 50%;
+}
+
 // // Class for when element is above threshold
 // .pin-top {
 //  position: relative;

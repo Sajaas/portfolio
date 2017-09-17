@@ -6,6 +6,7 @@ $(document).ready(function(){
     $('.text').css("visibility","visible");
   });
   $('.collapsible').collapsible();
+  $('.parallax').parallax();
   $(".button-collapse").sideNav({
     closeOnClick: true
   });
