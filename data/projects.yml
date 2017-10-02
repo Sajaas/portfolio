@@ -15,7 +15,7 @@
 
 - name: BMI
   used: Javascript, CSS, HTML5, Jasmine
-  link: https://sajaas.github.io/BMI/index.html
+  link: https://github.com/Sajaas/BMI
   description: A website which allows you to calculate your BMI, with metric or imperial methods. First time I got to deploy something to github pages and apply some css.
 
 - name: Checkout Bonus challenge
@@ -25,18 +25,33 @@
 
 - name: FizzBuzz JS
   used: Javascript, CSS, HTML5, Karma
-  link: https://sajaas.github.io/fizz_buzz_js/
+  link: https://github.com/Sajaas/fizz_buzz_js
   description: A weekend challenge where you work alone. I had to create an UI for my FizzBuzz code, deploy on github pages and style with css.
 
 - name: SlowFood
   used: Ruby, CSS, HTML5, Datamapper, Sinatra, Cucumber, Rspec
-  link: https://spice-it-up.herokuapp.com/
+  link: https://github.com/Sajaas/slow_food_sinatra_august_17
   description: My first group project! We deployed a site which allows a customer to log in and order food.
 
 - name: Portfolio
   used: Ruby, CSS, Haml, Rspec, middleman
   link: https://github.com/Sajaas/portfolio
   description: This portfolio! Woho!
+
+- name: Articles
+  used: Ruby on Rails, Cucumber, Rspec
+  link: https://github.com/Sajaas/rails_bdd
+  description: A smaller project to introduce Rails to us. I created articles with title & text, displayed articles, edited articles, and commented on the articles.
+
+- name: Mailboxer (legacy code)
+  used: Ruby on Rails, Cucumber, Rspec
+  link: https://github.com/Sajaas/rails_messaging_august_17
+  description: We got a mailboxer app which we were required to test, with both feature and unit tests.
+
+- name: LaundryTime
+  used: Ruby on Rails, Cucumber, Rspec, Bootstrap, CSS
+  link: https://github.com/Sajaas/laundry_time
+  description: Our midcourse project! We started with a design sprint, deciding on what features we want and how it should look. We created a booking system for laundry rooms, which allows a user to log in and book up to two slots from a calendar. The user can also cancel its booking.
 
 - name: Just for fun!
   used: Other projects that I love to work with
