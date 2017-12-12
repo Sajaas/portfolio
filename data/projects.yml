@@ -53,6 +53,26 @@
   link: https://github.com/Sajaas/laundry_time
   description: Our midcourse project! We started with a design sprint, deciding on what features we want and how it should look. We created a booking system for laundry rooms, which allows a user to log in and book up to two slots from a calendar. The user can also cancel its booking.
 
+- name: Ufoods
+  used: Ruby on Rails, Rspec, Cucumber, Foundation, PostgreSQL
+  link: https://github.com/Sajaas/ufoods
+  description: Created a more advanced restaurant site where you can choose restaurant category from restaurants within a ceratin radius. You can also choose between menues, order online, pay and add reviews.
+
+- name: BMI calculator (Ionic)
+  used: Ionic
+  link: https://github.com/Sajaas/ionic_bmi
+  description: First try at creating an mobile app
+
+- name: Kimchistan Backend (Final project)
+  used: Ruby on Rails, Rspec, Coveralls, Heroku
+  link: https://github.com/Sajaas/Kimchistan-BackEnd
+  description: Final project where we got a mission from an actual client. We built an API with Rails.
+
+- name: Kimchistan Frontend (Final project)
+  used: Angular, Karma, Protractor, Semaphore, Surge
+  link: https://github.com/Sajaas/Kimchistan-FrontEnd
+  description: We created the restaurant site where you can order and pay for food, displaying certain dishes as daily dishes and allowing you to choose additional ingredients.
+
 - name: Just for fun!
   used: Other projects that I love to work with
   link: https://saybooks.blogspot.se/
